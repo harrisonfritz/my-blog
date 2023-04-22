@@ -1,7 +1,14 @@
 
-
-
 <h1 class="title">{{title}}</h1>
-<div class="date">{{publication_date}}</div>
-<div class="date">Author: {{author}}</div>
-<div class="doc">{{body}}</div>
+<mat-divider class="mat-divider"></mat-divider>
+
+
+
+<h2 class="date">{{publication_date}}</h2>
+<div class="doc">
+<markdown ngPreserveWhitespaces
+[data]="body"
+>
+![image](assets/images/nyc.png)
+</markdown>
+</div>

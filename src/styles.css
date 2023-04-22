@@ -1,4 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+    margin: 0; font-family: Arial, "Helvetica Neue", sans-serif;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/lake-picture.jpg') top left no-repeat, url('/assets/images/repeating-lake-picture.png') bottom left repeat;
+    background-attachment: absolute;
+    background-size: cover;
+    height: auto;
+    opacity: 0.7;
+
+}
+

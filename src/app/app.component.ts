@@ -9,7 +9,8 @@ export class AppComponent {
 
   constructor(private router: Router) { }
   title = 'my-blog';
-  
+  isButtonVisible = true;
+
   goTo(str: string) {
     this.router.navigate(['/'+str])
 

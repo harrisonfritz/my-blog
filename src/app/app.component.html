@@ -1,4 +1,7 @@
-
+<div  id="circular_image" *ngIf="this.isButtonVisible"> 
+      <img src="assets/images/headshot.png" />
+  <button mat-raised-button id="go_away" @fade *ngIf="this.isButtonVisible" (click)="this.isButtonVisible = false">GO AWAY</button>
+  </div>
 
 <mat-toolbar color="secondary" class="toolbar">
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
@@ -13,11 +16,15 @@
       Blog
   </button>
 
+  <!--
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
   </button>
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
     <mat-icon>share</mat-icon>
   </button>
+  -->
 </mat-toolbar>
 <router-outlet></router-outlet>
+
+

@@ -1,3 +1,6 @@
+
+<body class="blog-index-body">
 <div class="blog-index" *ngFor="let blog of blogs1">
-    <app-blog-card [title]="blog.Title" [description]="blog.Description" class="blog-card"></app-blog-card>
+    <app-blog-card [title]="blog.Title" [description]="blog.Description" [publication_date]="blog.Publication_date" class="blog-card"></app-blog-card>
 </div>
+</body>

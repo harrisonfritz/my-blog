@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http'
 import { MatToolbar } from '@angular/material/toolbar';
 import {MatToolbarModule} from '@angular/material/toolbar'; 
+import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     AppRoutingModule,
     NoopAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,4 @@
+
 .blog-card {
     max-width: 400px;
     width: 300px;
@@ -8,6 +9,17 @@
     margin-top: 50px;
     margin-bottom: 50px;
     word-break:break-all;
-    font-family: "Georgia", Times, serif;
+    font-family: "Papyrus", Times, serif;
+    opacity: 1;
+    text-align: center;
+    color: black;
+    font-family: "Georgia", sans-serif;
+   /* background-image: url('/assets/images/pretty-graphic.png') */
+
+}
+
+
+.description {
+    opacity:1;
 }
  

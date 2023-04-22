@@ -1,3 +1,7 @@
+
+.blog-index-body {
+    background-attachment: fixed;
+}
 .blog-index {
     display:inline-flex;
     flex-wrap: wrap;
@@ -6,4 +10,5 @@
 .blog-card {
     overflow-wrap: normal;
     word-break: break-all;
+    opacity: 1;
 }

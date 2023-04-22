@@ -9,6 +9,7 @@ import { Router } from '@angular/router'
 export class BlogCardComponent implements OnInit {
   @Input() title!: string;
   @Input() description!: string;
+  @Input() publication_date!: string;
   @Input() blogLink!: string;
   linktitle: string = "shnoodle"
   constructor(private router: Router) { }
