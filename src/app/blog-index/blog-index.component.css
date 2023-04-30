@@ -3,8 +3,8 @@
     background-attachment: fixed;
 }
 .blog-index {
-    display:inline-flex;
-    flex-wrap: wrap;
+    -ms-flex: 1; /* IE 10 */
+    flex: 1;
 }
 
 .blog-card {

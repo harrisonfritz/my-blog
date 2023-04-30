@@ -1,25 +1,35 @@
 
 .blog-card {
-    max-width: 400px;
-    width: 300px;
-    max-height: 400px;
-    height:200px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    word-break:break-all;
-    font-family: "Papyrus", Times, serif;
+    height: 300px; 
+    width: 70%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    /*word-break:break-all;*/
     opacity: 1;
-    text-align: center;
     color: black;
-    font-family: "Georgia", sans-serif;
+    font-family: "Papyrus", Times, serif;
    /* background-image: url('/assets/images/pretty-graphic.png') */
 
 }
 
 
-.description {
+.description-text {
+    font-family: "Papyrus", Times, serif;
     opacity:1;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 1%;
+    max-width: 90%;
+    margin-bottom: 3%;
+}
+.description-image{
+    opacity:1;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 1%;
+    max-width: 40%;
+    margin-bottom: 5%;
 }
  

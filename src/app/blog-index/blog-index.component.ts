@@ -29,4 +29,5 @@ export class BlogIndexComponent implements OnInit {
     let url: string = (this.baseUrl + '/posts/'+id)
     return this.fetcher.get(url).toPromise()
    }
+
 }

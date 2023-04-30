@@ -1,6 +1,5 @@
-<mat-card appMaterialElevation class="blog-card" >
-    <a [routerLink]="['/paper', linktitle]">
-    <mat-card-header>
+<mat-card appMaterialElevation class="blog-card" (click)="navigate()" >
+    <mat-card-header (click)="navigate()">
         <mat-card-title>
         {{title}}
         </mat-card-title>
@@ -9,13 +8,12 @@
         </mat-card-subtitle>
         <img mat-card-avatar src="/assets/images/headshot.png"/>
     </mat-card-header>
-    </a>
 
     <mat-card-content>
-        <div class="description">
+        <div class="description-text">
         {{description}}
         </div>
-        <img mat-card-image  class="description" src="/assets/images/pretty-graphic.png" alt="Photo of a Shiba Inu"/>
+        <img mat-card-image   class="description-image" src={{matCardImage}} alt="Test Photo"/>
     </mat-card-content>
 </mat-card>
 <!--

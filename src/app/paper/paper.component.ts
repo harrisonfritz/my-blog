@@ -26,7 +26,7 @@ export class PaperComponent implements OnInit {
     let url = 'http://localhost:10000/posts/' + String(routeParams.get('title'))
     console.log(url)
     this.blogdata = await this.fetcher.get(url).toPromise()
-    this.loadBlog()
+    await this.loadBlog()
 
     // this.blogdata = await this.fetcher.get('http://localhost:10000/posts').toPromise()
     // const routeParams = this.route.snapshot.paramMap;
