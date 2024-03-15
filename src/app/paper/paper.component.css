@@ -1,30 +1,44 @@
-
 .title {
-   padding: 50px 0 0px;
-    text-align: center;
-    font-family: "Papyrus", Times, serif;
-    color: Black;
-    opacity: 0.5
+  padding: 30px 0;
+  text-align: center;
+  font-family: "Lake", Times, serif;
+  color: white;
+  font-size: 2rem;
 }
+
 .mat-divider {
-    border-top-width: 2px;
-    opacity: 1;
-    margin-left: 600px;
-    margin-right: 600px;
+  border-top-width: 2px;
+  opacity: 1;
+  margin: 0 auto;
+  max-width: 80%;
 }
-.date{
-   padding: 0px 0 0px;
-    margin-left: 200px;
-    margin-right: 200px;
-    font-family: "Papyrus", Times, serif;
-    text-align: center;
-    color: darkgrey;
+
+.date {
+  padding: 0px 0 15%;
+  font-family: "Lake", Times, serif;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
 }
+
 .doc {
-   padding: 20px 0 50px;
-    margin-left: 200px;
-    margin-right: 200px;
-    font-family: "Lake", Times, serif;
-    text-align: left;
-    color: lightgrey;
+  font-family: "Lake", Times, serif;
+  text-align: left;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin: 5% 5% 5% 5%;
+  word-wrap: break-word;
 }
+
+.paper-card{
+    height: auto;
+    width: 95%;
+    margin: 1%;
+    opacity: 0.8;
+    background-color: black;
+    box-shadow: 1 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+

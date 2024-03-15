@@ -11,17 +11,18 @@ export class BlogCardComponent implements OnInit {
   @Input() description!: string;
   @Input() publication_date!: string;
   @Input() blogLink!: string;
-  linktitle: string = "shnoodle"
-  matCardImage: string  = "https://www.wallpapers13.com/wp-content/uploads/2015/12/Nature-Lake-Bled.-Desktop-background-image-840x525.jpg"
+  @Input() card_image_url!: string;
+  linktitle: string = "loading title..."
   constructor(private router: Router) { }
 
   ngOnInit(): void {
 
-  await this.linktitle = this.title.replace(/\s+/g, '-').toLowerCase();
+  this.linktitle = this.title.replace(/\s+/g, '-').toLowerCase();
 
   }
 navigate() {
     
     this.router.navigateByUrl("/paper/"+this.linktitle)
 }
+
 }

@@ -10,8 +10,9 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http'
 import { MatToolbar } from '@angular/material/toolbar';
-import {MatToolbarModule} from '@angular/material/toolbar'; 
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MarkdownModule } from 'ngx-markdown';
+import { ReadingComponent } from './reading/reading.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MarkdownModule } from 'ngx-markdown';
     BlogIndexComponent,
     BlogCardComponent,
     HomeComponent,
+    ReadingComponent,
   ],
   imports: [
     BrowserModule,

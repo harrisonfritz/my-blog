@@ -1,69 +1,91 @@
 .example-spacer {
-    flex: auto
+    flex: auto;
 }
 
 .card {
     max-width: 400px;
 }
 
-.example-icon {
+.toolbar-icon {
     justify-content: left;
-    font-size:150%;
+    font-size: 150%;
     transform: scale(1);
     font-family: "Georgia", Times, serif;
 }
 
 #go_away {
-    width:15%;
+    width: 90px;
     z-index: 2;
     overflow: hidden;
     justify: left;
-    top:200px;
-    right:0;
+    top: 23%; /* Adjust the top position as needed */
+    right: 43px;
     position: fixed;
-    opacity: 0.4;
-    background-color: grey;
+    opacity: 1;
+    background-color: darkblue;
     color: lightblue;
-
+    transition: border 0.3s ease; /* Add transition for hover effect */
 }
-
-#circular_image img{
-    width:15%;
-    z-index: 2;
-    border-radius: 90%;
+#circular_image img {
+    width: 180px;
+    z-index: 1;
+    border-radius: 100%;
     overflow: hidden;
-    justify: left;
-    top: 0;
-    right: 0;
     position: fixed;
+    top: 5%; /* Adjust the top position as needed */
+    right: 0px;
     opacity: 0.6;
 }
 
 
+#go_away:hover {
+    border: solid black;
+}
+
+
+.toolbar:hover {
+  border: solid black;
+}
 
 .toolbar {
     justify-content: left;
-    height:10%;
+    height: 10%;
     font-family: "Georgia", Times, serif;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/lake-picture.jpg');
-    color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/lake-picture.jpg');
+    color: lightgrey;
     opacity: 0.6;
 }
 
+.toolbar .toolbar-icon:hover {
+  border: solid black;
+  border-width: 3px
+}
+
 .container {
-  height: 100vh;
+    height: 100vh;
 }
 
 #slowText {
-  position: absolute;
-  bottom: -30px;
-  right: 10px;
+    position: absolute;
+    bottom: -30px;
+    right: 10px;
 }
 
 #linearScrollingText {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 

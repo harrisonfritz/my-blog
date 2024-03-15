@@ -1,30 +1,42 @@
-<div  id="circular_image" *ngIf="this.isButtonVisible"> 
-      <img src="assets/images/headshot.png" />
-  <button mat-raised-button id="go_away" @fade *ngIf="this.isButtonVisible" (click)="this.isButtonVisible = false">GO AWAY</button>
-  </div>
+
+<div  id="circular_image" *ngIf="this.isButtonVisible">
+    <img src="assets/images/headshot.png" />
+    <button mat-raised-button id="go_away" @fade *ngIf="this.isButtonVisible" (click)="this.isButtonVisible = false">GO AWAY</button>
+</div>
 
 <mat-toolbar color="secondary" class="toolbar">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
 
-  <button (click)="goTo('home')" mat-button class="example-icon">
-      Home 
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="toolbar-icon">
+    <mat-icon>more_vert</mat-icon>
   </button>
+  <mat-menu #menu="matMenu">
+    <button (click)="resume()" mat-menu-item class="menu-button">
+      <mat-icon>anchor</mat-icon>
+      <span>resume</span>
+    </button>
+    <button (click)="redirect('https://github.com/harrisonfritz')" mat-menu-item class="menu-button">
+      <mat-icon>rocket_launch</mat-icon>
+      <span>github</span>
+    </button>
+    <button (click)="redirect('https://linkedin.com/in/harrison-fritz')" mat-menu-item>
+      <mat-icon class="toolbar-button">person</mat-icon>
+      <span>linkedin</span>
+    </button>
+  </mat-menu>
 
-  <button (click)="goTo('blog-index')" mat-button class="example-icon">
-      Blog
-  </button>
 
-  <!--
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
-  -->
+
+      <button (click)="goTo('home')" mat-button class="toolbar-icon">
+          Home
+      </button>
+
+      <button (click)="goTo('blog-index')" mat-button class="toolbar-icon">
+         Writing
+      </button>
+
+      <button (click)="goTo('reading')" mat-button class="toolbar-icon">
+         Reading
+      </button>
 </mat-toolbar>
 <router-outlet></router-outlet>
-
 

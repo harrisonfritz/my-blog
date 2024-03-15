@@ -1,19 +1,18 @@
 <mat-card appMaterialElevation class="blog-card" (click)="navigate()" >
     <mat-card-header (click)="navigate()">
-        <mat-card-title>
-        {{title}}
+        <mat-card-title class="title">
+            {{title}}
         </mat-card-title>
-        <mat-card-subtitle>
-            {{publication_date}}
-        </mat-card-subtitle>
-        <img mat-card-avatar src="/assets/images/headshot.png"/>
+    <mat-card-subtitle>
+        {{publication_date}}
+    </mat-card-subtitle>
     </mat-card-header>
 
     <mat-card-content>
         <div class="description-text">
-        {{description}}
+            {{description}}
         </div>
-        <img mat-card-image   class="description-image" src={{matCardImage}} alt="Test Photo"/>
+        <!--        <img mat-card-image   class="description-image" src={{card_image_url}} alt="Test Photo"/> -->
     </mat-card-content>
 </mat-card>
 <!--

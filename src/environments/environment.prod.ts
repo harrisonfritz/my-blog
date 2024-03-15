@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'http://harrisonfritz.com:10000'
+  baseUrl: 'https://harrisonfritz.com:10443'
 };
