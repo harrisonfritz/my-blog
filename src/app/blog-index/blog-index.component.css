@@ -11,4 +11,5 @@
     overflow-wrap: normal;
     word-break: break-all;
     opacity: 1;
+    overflow: scroll;
 }

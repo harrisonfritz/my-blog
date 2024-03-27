@@ -1,6 +1,6 @@
 .blog-card {
     height: auto;
-    max-height: 300px;
+    height: 8.0rem ;
     width: 70%;
     margin: 1% 10px;
     opacity: 0.8;
@@ -9,7 +9,7 @@
     background-color: white;
     box-shadow: 1 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    overflow: hidden;
+    overflow: auto;
     font-size: 1.0 rem;
 }
 
